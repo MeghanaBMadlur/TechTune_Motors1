@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("{% static 'images.jpeg' %}");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        
+            /* Other CSS styles for your background */
+        }
+        h1{
+            padding-top: 140px;
+            text-align: center;
+            color: #000080;
+            font-style: Cambria;
+        }
+        .content{
+            padding-top:23%;
+            font-size:20px ;
+            font-family: fantasy;
+x        }
+.nav {
+            text-align: center;
+        }
+
+        .nav a {
+            display: inline-block;
+            margin: 10px; /* Adjust the margin as needed */
+            text-decoration: none;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome To TechTune Motors</h1>
+<div class="content">
+    <p> Tech Tune Motors, RR Nagar, Bengaluru</p>  
+   
+</div>
+<div class="nav">
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'contact' %}">Contact</a>
+    <a href="{% url 'register' %}">Register</a>
+    </div>
+</body>
+</html>
